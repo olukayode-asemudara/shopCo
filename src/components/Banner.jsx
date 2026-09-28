@@ -5,13 +5,13 @@ const Banner = () => {
     <div
       role="region"
       aria-label="Promotion"
-      class="bg-[#000000] px-4 py-2.5 relative flex items-center justify-center text-center border-b border-slate-800 md:px-6"
+      className="bg-[#000000] px-4 py-2.5 relative flex items-center justify-center text-center border-b border-slate-800 md:px-6"
     >
-      <p class="text-sm text-slate-50 font-medium pr-6 leading-relaxed">
-        Limited Time Offer! Enjoy 20% OFF your first order –
+      <p className="text-sm text-slate-50 font-medium pr-6 leading-relaxed">
+        Sign up and get 20% off to your first order.
         <a
           href="#"
-          class="ml-1 underline underline-offset-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+          className="ml-1 underline underline-offset-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
         >
           Sign Up Now!
         </a>
@@ -20,11 +20,11 @@ const Banner = () => {
       <button
         type="button"
         aria-label="Dismiss notification banner"
-        class="absolute right-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+        className="absolute right-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="size-3 cursor-pointer fill-slate-50"
+          className="size-3 cursor-pointer fill-slate-50"
           aria-hidden="true"
           viewBox="0 0 329.269 329"
         >

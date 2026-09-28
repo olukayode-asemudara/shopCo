@@ -5,6 +5,7 @@ import Hero from "../components/home/Hero";
 import Navbar from "../components/Navbar";
 import NewsLetter from "../components/NewsLetter";
 import ProductList from "../components/products/ProductList";
+import BentoGrid from "../components/BentoGrid";
 import Testimonials from "../components/Testimonials";
 
 const Home = () => {
@@ -14,7 +15,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Brands />
-      <ProductList />
+      <ProductList subtitle="NEW ARRIVALS" start={0} />
+      <ProductList subtitle="Top Selling" start={4} />
+      <BentoGrid />
       <Testimonials />
       <NewsLetter />
       <Footer />
