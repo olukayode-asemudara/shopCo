@@ -1,11 +1,16 @@
 import { Star } from "lucide-react";
+import { useNavigate } from "react-router";
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
   return (
-    <div className="space-y-5">
+    <div
+      onClick={() => navigate(`/product/${product.id}`)}
+      className="space-y-5 cursor-pointer"
+    >
       {/* image box */}
       <div className="bg-[#F0EEED] p-3 rounded-3xl">
-        <img src={product.images} alt="" />
+        <img src={product.images[0]} alt="" />
       </div>
 
       {/* desc box */}

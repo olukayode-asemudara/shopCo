@@ -1,13 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { fakeStoreApi } from "../api/fakeStoreApi";
+import { dummyJsonData } from "../api/dummJsonApi";
+import cartReducer from "../slices/cartSlice";
 
 export const store = configureStore({
   reducer: {
-    [fakeStoreApi.reducerPath]: fakeStoreApi.reducer,
+    [dummyJsonData.reducerPath]: dummyJsonData.reducer,
+    cart: cartReducer,
   },
+
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(fakeStoreApi.middleware),
+    getDefaultMiddleware().concat(dummyJsonData.middleware),
 });
 
 setupListeners(store.dispatch);

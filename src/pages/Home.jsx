@@ -18,7 +18,7 @@ const Home = () => {
       <ProductList subtitle="NEW ARRIVALS" start={0} />
       <ProductList subtitle="Top Selling" start={4} />
       <BentoGrid />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <NewsLetter />
       <Footer />
     </>

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../MainBtutton";
+import Button from "../MainButton";
 
 const Hero = () => {
   return (

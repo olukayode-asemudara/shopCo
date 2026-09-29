@@ -1,6 +1,8 @@
-import React from "react";
+import { useState } from "react";
 
 const Banner = () => {
+  const [hidden, setHidden] = useState(true);
+
   return (
     <div
       role="region"
@@ -21,6 +23,7 @@ const Banner = () => {
         type="button"
         aria-label="Dismiss notification banner"
         className="absolute right-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+        onClick={()=>handleClick()}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

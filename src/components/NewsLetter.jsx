@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsLetter = () => {
   return (
-    <section>
+    <section className="py-20">
       <div className="grid md:grid-cols-2 max-w-7xl mx-auto bg-black rounded-3xl p-10">
         <h2 className="col-span-[60%] text-white text-4xl font-bold">
           STAY UPTO DATE ABOUT OUR LATEST OFFERS
