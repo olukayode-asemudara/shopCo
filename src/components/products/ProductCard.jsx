@@ -1,7 +1,10 @@
 import { Star } from "lucide-react";
 import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../slices/cartSlice";
 
 const ProductCard = ({ product }) => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   return (
     <div
@@ -25,6 +28,15 @@ const ProductCard = ({ product }) => {
         </div>
         <p className="text-2xl font-bold">${product.price}</p>
       </div>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          dispatch(addToCart(product));
+        }}
+        className="cursor-pointer border py-3 font-semibold px-12 rounded-full"
+      >
+        add to cart
+      </button>
     </div>
   );
 };
