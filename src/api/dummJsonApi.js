@@ -13,6 +13,10 @@ export const dummyJsonData = createApi({
     getProduct: builder.query({
       query: (id) => `/products/${id}`,
     }),
+
+    login: builder.mutation({
+      // mutation: ()
+    }),
   }),
 });
 

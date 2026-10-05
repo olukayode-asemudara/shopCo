@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link to="/cart">
               <FaCartShopping className="text-xl" />
             </Link>
-            <Link to="#">
+            <Link to="/login">
               <FaUserCircle className="text-xl" />
             </Link>
           </div>
