@@ -6,9 +6,9 @@ import { useState } from "react";
 const ProductList = ({ subtitle, start = 0, limit = 4 }) => {
   const { data, isLoading, error } = useGetProductsQuery();
   const [showAll, setShowAll] = useState(false);
-  // console.log(data);
+  console.log(data);
 
-  // console.log(error);
+  console.log(error);
 
   const products = showAll
     ? data?.products
