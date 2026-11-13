@@ -35,7 +35,7 @@ const Footer = () => {
                 to="#"
                 className="min-h-12 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
               >
-                <img className="h-5 w-auto" src="./shopCo.svg" alt="logo" />
+                <img className="h-5 w-auto" src="/shopCo.svg" alt="logo" />
               </Link>
               <div className="mt-6">
                 <p className="text-slate-600 leading-relaxed text-sm">

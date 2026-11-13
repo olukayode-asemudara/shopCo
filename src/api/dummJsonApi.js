@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const URL = import.meta.env.VITE_APP_BASEURL;
+const URL = import.meta.env.VITE_APP_BASEURL || "https://dummyjson.com";
 
 export const dummyJsonData = createApi({
   reducerPath: "dummyJsonApi",
